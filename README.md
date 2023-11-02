@@ -18,10 +18,19 @@ To install with pip:
 pip install https://github.com/drivendataorg/suds-jurko-wheel/releases/download/v0.6/suds_jurko-0.6-py3-none-any.whl
 ```
 
-To include in a `requirements.txt` file:
+To include in a [`requirements.txt` file](https://pip.pypa.io/en/stable/reference/requirements-file-format/) that you can install with `pip install -r`:
 
-```bash
+```
 suds-jurko @ https://github.com/drivendataorg/suds-jurko-wheel/releases/download/v0.6/suds_jurko-0.6-py3-none-any.whl
+```
+
+To include in a `pyproject.toml` file as a [package dependency](https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#dependencies-optional-dependencies):
+
+```toml
+[project]
+dependencies = [
+  "suds-jurko @ https://github.com/drivendataorg/suds-jurko-wheel/releases/download/v0.6/suds_jurko-0.6-py3-none-any.whl",
+]
 ```
 
 ## Building the wheel yourself
