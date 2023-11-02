@@ -10,7 +10,7 @@ By distributing suds-jurko as a wheel, users can easily `pip install` suds-jurko
 
 ## Using the wheel
 
-The wheel is published as a release asset on this repository. See the `suds_jurko-0.6-py3-none-any.whl` file on the [Releases page](https://github.com/drivendataorg/suds-jurko-wheel/releases).
+The wheel is published as a release asset on this repository. See the `suds_jurko-0.6-py3-none-any.whl` file on the [Releases page](https://github.com/drivendataorg/suds-jurko-wheel/releases). You can use this as a drop-in replacement for installing suds-jurko normally from PyPI. If you need suds-jurko because it's a dependency of another package you need, like ulmo, you can either install this suds-jurko distribution first or specify them both as dependencies side-by-side in your `requirements.txt` or `pyproject.toml`.
 
 To install with pip:
 
@@ -32,6 +32,9 @@ dependencies = [
   "suds-jurko @ https://github.com/drivendataorg/suds-jurko-wheel/releases/download/v0.6/suds_jurko-0.6-py3-none-any.whl",
 ]
 ```
+
+> ![NOTE]
+> PyPI has a policy of not allowing direct dependencies (i.e., dependencies not on PyPI) when publishing any packages to there. If there is an interest in using this distribution as a dependency of a PyPI package, please file an issue. We can consider publishing this package under a different name to serve as a drop-in replacement.
 
 ## Building the wheel yourself
 
