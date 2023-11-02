@@ -33,7 +33,7 @@ dependencies = [
 ]
 ```
 
-> ![NOTE]
+> [!NOTE]  
 > PyPI has a policy of not allowing direct dependencies (i.e., dependencies not on PyPI) when publishing any packages to there. If there is an interest in using this distribution as a dependency of a PyPI package, please file an issue. We can consider publishing this package under a different name to serve as a drop-in replacement.
 
 ## Building the wheel yourself
